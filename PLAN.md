@@ -46,8 +46,8 @@
 
 | ドキュメント | パス | 作成タイミング |
 |------------|------|--------------|
-| F-01 技術選定 | `docs/tech-selection/01-news-feed.md` | F-01 Step 2 |
-| F-01 アーキテクチャ設計 | `docs/architecture/01-news-feed.md` | F-01 Step 3 |
+| F-01 技術選定 | [`docs/tech-selection/01-news-feed.md`](docs/tech-selection/01-news-feed.md) | 完了 |
+| F-01 アーキテクチャ設計 | [`docs/architecture/01-news-feed.md`](docs/architecture/01-news-feed.md) | 完了 |
 | F-02 技術選定 | `docs/tech-selection/02-financial-insights.md` | F-02 Step 2 |
 | F-02 アーキテクチャ設計 | `docs/architecture/02-financial-insights.md` | F-02 Step 3 |
 | F-03 技術選定 | `docs/tech-selection/03-task-notifications.md` | F-03 Step 2 |
@@ -75,19 +75,19 @@
 - **成果物**: [`docs/requirements/01-news-feed.md`](docs/requirements/01-news-feed.md)
 
 #### Step 2: 技術選定
-- [ ] ニュース取得方法の比較（RSS / News API / スクレイピング）
-- [ ] LLMの選定（コスト・機能の比較）
-- [ ] 配信手段の選定（メール / Slack）
-- [ ] スケジューラーの選定（cron / Lambda / n8n）
-- [ ] 除外条件の保存方法の選定
-- **成果物**: `docs/tech-selection/01-news-feed.md`
+- [x] ニュース取得方法の比較（RSS / News API / スクレイピング）→ Google News RSS + GNews API
+- [x] LLMの選定（コスト・機能の比較）→ Claude API（Haiku）
+- [x] 配信手段の選定（メール / Slack）→ Slack Webhook
+- [x] スケジューラーの選定（cron / Lambda / n8n）→ GitHub Actions
+- [x] 除外条件の保存方法の選定 → JSONファイル（リポジトリ管理）
+- **成果物**: [`docs/tech-selection/01-news-feed.md`](docs/tech-selection/01-news-feed.md)
 
 #### Step 3: アーキテクチャ設計
-- [ ] コンポーネント図の作成
-- [ ] データフローの設計
-- [ ] データモデル設計（除外条件の構造）
-- [ ] ディレクトリ構成の決定
-- **成果物**: `docs/architecture/01-news-feed.md`
+- [x] コンポーネント図の作成
+- [x] データフローの設計
+- [x] データモデル設計（除外条件の構造）
+- [x] ディレクトリ構成の決定
+- **成果物**: [`docs/architecture/01-news-feed.md`](docs/architecture/01-news-feed.md)
 
 #### Step 4: リポジトリ初期化・環境構築
 - [ ] 基本ディレクトリ構成の作成
@@ -130,14 +130,14 @@
 
 ## 現在のステータス
 
-**F-01 Step 2（技術選定）が次のアクション**
+**F-01 Step 4（リポジトリ初期化・環境構築）が次のアクション**
 
 ```
 共通フェーズ ████████████ 完了
 F-01 Step 1  ████████████ 完了
-F-01 Step 2  ░░░░░░░░░░░░ 未着手 ← ここ
-F-01 Step 3  ░░░░░░░░░░░░ 未着手
-F-01 Step 4  ░░░░░░░░░░░░ 未着手
+F-01 Step 2  ████████████ 完了
+F-01 Step 3  ████████████ 完了
+F-01 Step 4  ░░░░░░░░░░░░ 未着手 ← ここ
 F-01 Step 5  ░░░░░░░░░░░░ 未着手
 F-01 Step 6  ░░░░░░░░░░░░ 未着手
 F-02 ...     ░░░░░░░░░░░░ 未着手
